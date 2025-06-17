@@ -258,6 +258,8 @@
         "name": "MacProp",
         "host": "bj66pvgwriw5mrlyhakm-mysql.services.clever-cloud.com",
         "port": "3306",
+        "user": "urvlriv1m8gdn401",
+        "password": "LgXqraWR4A8hyocP8Cj4",
         "db": "bj66pvgwriw5mrlyhakm",
         "tz": "",
         "charset": "UTF8"
