@@ -1,7 +1,7 @@
-const host = global.get("MYSQL_HOST");
-const user = global.get("MYSQL_USER");
-const pass = global.get("MYSQL_PASS");
-const db   = global.get("MYSQL_DB");
+const host = process.env.MYSQL_HOST;
+const user = process.env.MYSQL_USER;
+const pass = process.env.MYSQL_PASS;
+const db   = process.env.MYSQL_DB;
 
 
 const http = require('http');
