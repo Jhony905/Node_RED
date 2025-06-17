@@ -8,6 +8,11 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "node-red": "^3.1.0"
+    "node-red": "^3.1.0",
+    "node-red-dashboard": "^3.6.5",
+    "node-red-node-ui-table": "^0.4.4",
+    "node-red-contrib-ui-media": "^1.2.0",
+    "node-red-node-mysql-dynamic": "^2.0.0",
+    
   }
 }
