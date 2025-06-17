@@ -1,3 +1,9 @@
+const host = global.get("MYSQL_HOST");
+const user = global.get("MYSQL_USER");
+const pass = global.get("MYSQL_PASS");
+const db   = global.get("MYSQL_DB");
+
+
 const http = require('http');
 const express = require('express');
 const RED = require('node-red');
