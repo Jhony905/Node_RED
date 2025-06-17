@@ -1,18 +1,10 @@
-const express = require("express");
-const http = require("http");
-const RED = require("node-red");
+const http = require('http');
+const express = require('express');
+const RED = require('node-red');
+const settings = require('./settings');
 
 const app = express();
 const server = http.createServer(app);
-
-const settings = {
-    httpAdminRoot: "/",
-    httpNodeRoot: "/api",
-    userDir: "./.nodered/",
-    functionGlobalContext: {},
-    ui: { path: "ui" },
-    port: process.env.PORT || 1880
-};
 
 // Inicializa Node-RED
 RED.init(server, settings);
@@ -22,8 +14,9 @@ app.use(settings.httpAdminRoot, RED.httpAdmin);
 app.use(settings.httpNodeRoot, RED.httpNode);
 
 // Inicia servidor
-server.listen(settings.port, () => {
-    console.log(`Node-RED funcionando en puerto ${settings.port}`);
+const PORT = process.env.PORT || 1880;
+server.listen(PORT, () => {
+    console.log(`Node-RED funcionando en puerto ${PORT}`);
 });
 
 // Arranca flujos
