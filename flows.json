@@ -1,0 +1,2876 @@
+[
+    {
+        "id": "31f68e294bae2c1b",
+        "type": "tab",
+        "label": "Proyecto MacProp",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8d794e0f21b2a234",
+        "type": "tab",
+        "label": "Dash_Tendencias",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4a85106a725bafbf",
+        "type": "tab",
+        "label": "Dash_Consultas",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6d4fbd3d446b2312",
+        "type": "tab",
+        "label": "Dash_Comparaciones",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "42a4cc9d447f2f39",
+        "type": "tab",
+        "label": "Cadena-JSON-DB",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5341bd8a04ff6e01",
+        "type": "tab",
+        "label": "Prueba de Buffer String Json",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8a4b8e583563a5c9",
+        "type": "tab",
+        "label": "Borrador",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c9c1418d72958be4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5a83681e8faef88b",
+        "type": "ui_tab",
+        "name": "Comparaciones",
+        "icon": "compare",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4a8abc425c691dcb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "MacProp",
+                "default": "#4B7930",
+                "baseColor": "#386aff",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "MacProp Dashboard - Node",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "YYYY/MM/DD",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 8,
+                "gy": 8,
+                "cx": 5,
+                "cy": 5,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "d230c3ce7cc85156",
+        "type": "ui_group",
+        "name": "G_Comparaciones",
+        "tab": "5a83681e8faef88b",
+        "order": 2,
+        "disp": false,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "broker_mqtt",
+        "type": "mqtt-broker",
+        "name": "Broker MQTT",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dashboard_tab",
+        "type": "ui_tab",
+        "name": "Consultas",
+        "icon": "search",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dashboard_group",
+        "type": "ui_group",
+        "name": "Lista de Valores",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": false,
+        "width": 29,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "387630998c9e2ce7",
+        "type": "MySQLdatabase",
+        "name": "MacProp",
+        "host": "bj66pvgwriw5mrlyhakm-mysql.services.clever-cloud.com",
+        "port": "3306",
+        "db": "bj66pvgwriw5mrlyhakm",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "40edcb0f5aa96f67",
+        "type": "mqtt-broker",
+        "name": "Broker MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "67eb43532b70b41a",
+        "type": "MySQLdatabase",
+        "name": "MySQL Clever Cloud",
+        "host": "TU_HOST",
+        "port": "3306",
+        "db": "TU_DB",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "da_ui_group",
+        "type": "ui_group",
+        "name": "Monitor de red",
+        "tab": "5a83681e8faef88b",
+        "order": 3,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a904a659376a85c9",
+        "type": "ui_group",
+        "name": "Pestañas",
+        "tab": "5a83681e8faef88b",
+        "order": 1,
+        "disp": false,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7b343e88671e334b",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "fa-line-chart",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b6a37d8d725e7c37",
+        "type": "ui_group",
+        "name": "Tendencias",
+        "tab": "7b343e88671e334b",
+        "order": 1,
+        "disp": false,
+        "width": 29,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "233d4a279aa96b6b",
+        "type": "ui_spacer",
+        "z": "4a85106a725bafbf",
+        "name": "spacer",
+        "group": "a904a659376a85c9",
+        "order": 3,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "8e63c20a04e28df2",
+        "type": "ui_spacer",
+        "z": "4a85106a725bafbf",
+        "name": "spacer",
+        "group": "d230c3ce7cc85156",
+        "order": 3,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "cb4b8bca94e39f7c",
+        "type": "ui_spacer",
+        "z": "4a85106a725bafbf",
+        "name": "spacer",
+        "group": "d230c3ce7cc85156",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4d81201c49cb93f0",
+        "type": "ui_spacer",
+        "z": "4a85106a725bafbf",
+        "name": "spacer",
+        "group": "d230c3ce7cc85156",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5263fce53ccfea16",
+        "type": "ui_spacer",
+        "z": "4a85106a725bafbf",
+        "name": "spacer",
+        "group": "dashboard_group",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "665dd6db448f2c07",
+        "type": "global-config",
+        "name": "global-config",
+        "env": []
+    },
+    {
+        "id": "77330f3aa4aa72ca",
+        "type": "ui_spacer",
+        "z": "31f68e294bae2c1b",
+        "name": "spacer",
+        "group": "b6a37d8d725e7c37",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "499bc7e9dd969d74",
+        "type": "ui_spacer",
+        "z": "31f68e294bae2c1b",
+        "name": "spacer",
+        "group": "b6a37d8d725e7c37",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "51cec5562a558e59",
+        "type": "ui_spacer",
+        "z": "31f68e294bae2c1b",
+        "name": "spacer",
+        "group": "b6a37d8d725e7c37",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "01fe12b622eada44",
+        "type": "ui_spacer",
+        "z": "31f68e294bae2c1b",
+        "name": "spacer",
+        "group": "b6a37d8d725e7c37",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d0064e17f2fce6b8",
+        "type": "ui_spacer",
+        "z": "31f68e294bae2c1b",
+        "name": "spacer",
+        "group": "b6a37d8d725e7c37",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c8ce0ea2f3032783",
+        "type": "ui_spacer",
+        "z": "31f68e294bae2c1b",
+        "name": "spacer",
+        "group": "b6a37d8d725e7c37",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d69b9a7d4a530eb1",
+        "type": "ui_spacer",
+        "z": "31f68e294bae2c1b",
+        "name": "spacer",
+        "group": "b6a37d8d725e7c37",
+        "order": 17,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "b3359e7c5006995a",
+        "type": "ui_spacer",
+        "z": "31f68e294bae2c1b",
+        "name": "spacer",
+        "group": "b6a37d8d725e7c37",
+        "order": 19,
+        "width": 19,
+        "height": 1
+    },
+    {
+        "id": "138a4b2c423eefc8",
+        "type": "mqtt in",
+        "z": "31f68e294bae2c1b",
+        "name": "",
+        "topic": "indu/medidor/001/dato",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "c9c1418d72958be4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "9b36dd3441df2866"
+            ]
+        ]
+    },
+    {
+        "id": "96211df4fac1f81f",
+        "type": "inject",
+        "z": "31f68e294bae2c1b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"FechaHora\":\"2025-04-16 14:05:51\",\"Medicion\":3851,\"UndMedida\":1,\"Localizacion\":1}",
+        "payloadType": "str",
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "9b36dd3441df2866"
+            ]
+        ]
+    },
+    {
+        "id": "9b36dd3441df2866",
+        "type": "split",
+        "z": "31f68e294bae2c1b",
+        "name": "Dividir Json",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "fee57db6295eac39"
+            ]
+        ]
+    },
+    {
+        "id": "108086f2f34448b9",
+        "type": "comment",
+        "z": "31f68e294bae2c1b",
+        "name": "Creacion de Dividir JSON",
+        "info": "Mejora:\nCon la finalidad de poder recibir \nen el envio 2 lineas de los JSON y así\nreducir el tiempo de recepción de datos\nen el envío.\n\nPara el caso de la recepcion por MQTT\nse usa la expresion en Dividir usando \"\\n\" \n\nPara el caso de la recepcion por Inyectar\nse usa la expresion en Dividir usando \" \" ",
+        "x": 530,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "84a6a1fb373367aa",
+        "type": "mysql",
+        "z": "31f68e294bae2c1b",
+        "d": true,
+        "mydb": "387630998c9e2ce7",
+        "name": "MacProp_DB",
+        "x": 710,
+        "y": 620,
+        "wires": [
+            [
+                "a23290e52402f631"
+            ]
+        ]
+    },
+    {
+        "id": "71bb3a018a9eea3e",
+        "type": "json",
+        "z": "31f68e294bae2c1b",
+        "name": "Obj Json",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 340,
+        "y": 260,
+        "wires": [
+            [
+                "1e3ada08ba7d0be2",
+                "25a93da4c1ca44f1"
+            ]
+        ]
+    },
+    {
+        "id": "86b74dc418d56f24",
+        "type": "debug",
+        "z": "31f68e294bae2c1b",
+        "name": "Monitor 0",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a23290e52402f631",
+        "type": "debug",
+        "z": "31f68e294bae2c1b",
+        "name": "Monitor 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "fee57db6295eac39",
+        "type": "switch",
+        "z": "31f68e294bae2c1b",
+        "name": "Filtrar Json",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "{",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "71bb3a018a9eea3e"
+            ]
+        ]
+    },
+    {
+        "id": "1e3ada08ba7d0be2",
+        "type": "function",
+        "z": "31f68e294bae2c1b",
+        "name": "Acumular en buffer",
+        "func": "let buffer = flow.get(\"buffer\") || [];\nbuffer.push(msg.payload);\nflow.set(\"buffer\", buffer);\nreturn null;",
+        "outputs": 0,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "582d0768632b8a20",
+        "type": "inject",
+        "z": "31f68e294bae2c1b",
+        "name": "Cada 7s",
+        "props": [],
+        "repeat": "7",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "",
+        "x": 340,
+        "y": 580,
+        "wires": [
+            [
+                "3c7a1218da64b725"
+            ]
+        ]
+    },
+    {
+        "id": "3c7a1218da64b725",
+        "type": "function",
+        "z": "31f68e294bae2c1b",
+        "name": "Generar SQL múltiple",
+        "func": "let buffer = flow.get(\"buffer\") || [];\nif (buffer.length === 0) return null;\n\nlet sql = \"INSERT INTO DB_MacProp (`FECHA_HORA`, `MEDICION`, `UNIDAD`, `LOCALIZACION`, `DISPOSITIVO`) VALUES \";\nlet filas = buffer.map(d => `('${d.FechaHora}', ${d.Medicion}, ${d.UndMedida}, ${d.Localizacion}, ${d.Dispositivo})`);\nsql += filas.join(\", \") + \";\";\n\nflow.set(\"buffer\", []);  // limpiar\nreturn { topic: sql };\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 580,
+        "wires": [
+            [
+                "84a6a1fb373367aa"
+            ]
+        ]
+    },
+    {
+        "id": "e92eaddc1c64c6a6",
+        "type": "mqtt in",
+        "z": "31f68e294bae2c1b",
+        "name": "",
+        "topic": "indu/medidor/002/dato",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "c9c1418d72958be4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "b9c482283cb3ee5b"
+            ]
+        ]
+    },
+    {
+        "id": "31b0f46531e45cb7",
+        "type": "inject",
+        "z": "31f68e294bae2c1b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"FechaHora\":\"2025-04-16 14:05:51\",\"Medicion\":3851,\"UndMedida\":1,\"Localizacion\":1}",
+        "payloadType": "str",
+        "x": 230,
+        "y": 460,
+        "wires": [
+            [
+                "b9c482283cb3ee5b"
+            ]
+        ]
+    },
+    {
+        "id": "b9c482283cb3ee5b",
+        "type": "split",
+        "z": "31f68e294bae2c1b",
+        "name": "Dividir Json",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "427cd062fed2fba8"
+            ]
+        ]
+    },
+    {
+        "id": "b5f5ed0c2a055a88",
+        "type": "comment",
+        "z": "31f68e294bae2c1b",
+        "name": "Creacion de Dividir JSON",
+        "info": "Mejora:\nCon la finalidad de poder recibir \nen el envio 2 lineas de los JSON y así\nreducir el tiempo de recepción de datos\nen el envío.\n\nPara el caso de la recepcion por MQTT\nse usa la expresion en Dividir usando \"\\n\" \n\nPara el caso de la recepcion por Inyectar\nse usa la expresion en Dividir usando \" \" ",
+        "x": 530,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "0fdf44cbe5452add",
+        "type": "json",
+        "z": "31f68e294bae2c1b",
+        "name": "Obj Json",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "1e3ada08ba7d0be2",
+                "86b74dc418d56f24",
+                "25a93da4c1ca44f1"
+            ]
+        ]
+    },
+    {
+        "id": "2af2095c9b2e1be4",
+        "type": "debug",
+        "z": "31f68e294bae2c1b",
+        "name": "Monitor 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "427cd062fed2fba8",
+        "type": "switch",
+        "z": "31f68e294bae2c1b",
+        "name": "Filtrar Json",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "{",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "0fdf44cbe5452add"
+            ]
+        ]
+    },
+    {
+        "id": "25a93da4c1ca44f1",
+        "type": "function",
+        "z": "31f68e294bae2c1b",
+        "name": "Comparar mediciones",
+        "func": "// Diccionario de nombres\nconst nombres = { 1: \"Barranquilla\", 2: \"Galapa\", 3: \"Malambo\" };\n\n// Utilidad para timestamp\nfunction obtenerTimestamp(fechaStr) {\n    const [fecha, hora] = fechaStr.split(\"_\");\n    const utcDate = new Date(`${fecha}T${hora}Z`); // Interpreta como UTC\n    const offset = new Date().toLocaleString(\"en-US\", { timeZone: \"America/Bogota\" });\n    const localDate = new Date(offset);\n    const delta = localDate.getTime() - new Date().getTime();\n    return utcDate.getTime() + delta;\n}\n\n// ------------------------\n// Verificar RESET\n// ------------------------\nif (msg.payload && msg.payload.reset === true) {\n    flow.set(\"ultimosDatos\", {});\n    flow.set(\"bufferDatos\", { 1: [], 2: [], 3: [] });\n    flow.set(\"bufferDiferencia\", []);\n    flow.set(\"bufferMediciones\", { 1: [], 2: [], 3: [] });\n\n    node.warn(\"Buffers reiniciados\");\n\n    let vacio = {\n        payload: [{ series: [], data: [], labels: [] }]\n    };\n    return [vacio, vacio, vacio, vacio, vacio, vacio, vacio, vacio];\n}\n\n// ------------------------\n// Procesar nuevo dato\n// ------------------------\nconst entrada = msg.payload;\nif (!entrada || !entrada.FechaHora || entrada.Localizacion == null || entrada.Medicion == null) {\n    node.warn(\"Mensaje de entrada incompleto\");\n    return [null, null, null, null, null, null, null, null];\n}\n\nconst loc = entrada.Localizacion;\nconst ts = obtenerTimestamp(entrada.FechaHora);\nconst medicion = entrada.Medicion;\n\nif (ts === null) return [null, null, null, null, null, null, null, null];\n\nlet estados = flow.get(\"ultimosDatos\") || {};\nlet anterior = estados[loc];\n\nlet buffer = flow.get(\"bufferDatos\") || { 1: [], 2: [], 3: [] };\nlet bufferMediciones = flow.get(\"bufferMediciones\") || { 1: [], 2: [], 3: [] };\n\nestados[loc] = { ts, medicion };\nflow.set(\"ultimosDatos\", estados);\n\nif (!anterior) return [null, null, null, null, null, null, null, null];\n\nlet deltaMed = medicion - anterior.medicion;\nlet deltaSeg = (ts - anterior.ts) / 1000;\nif (deltaSeg <= 0) return [null, null, null, null, null, null, null, null];\n\nlet caudal = deltaMed / deltaSeg;\nlet punto = { x: ts, y: caudal };\n\nbuffer[loc].push(punto);\nif (buffer[loc].length > 500) buffer[loc].shift();\nflow.set(\"bufferDatos\", buffer);\n\n// 🧪 Medición directa\nbufferMediciones[loc].push({ x: ts, y: medicion });\nif (bufferMediciones[loc].length > 500) bufferMediciones[loc].shift();\nflow.set(\"bufferMediciones\", bufferMediciones);\n\n// 📊 Salidas individuales\nlet salida1 = loc === 1 ? { payload: [{ series: [nombres[1]], data: [buffer[1]], labels: [] }] } : null;\nlet salida2 = loc === 2 ? { payload: [{ series: [nombres[2]], data: [buffer[2]], labels: [] }] } : null;\nlet salida3 = loc === 3 ? { payload: [{ series: [nombres[3]], data: [buffer[3]], labels: [] }] } : null;\n\n// 📊 Comparativa de caudal\nlet seriesComparativa = [], dataComparativa = [];\nfor (let i = 1; i <= 3; i++) {\n    if (buffer[i].length) {\n        seriesComparativa.push(nombres[i]);\n        dataComparativa.push(buffer[i]);\n    }\n}\nlet salida4 = {\n    payload: [{\n        series: seriesComparativa,\n        data: dataComparativa,\n        labels: []\n    }]\n};\n\n// 📉 Diferencia entre 1 y 2\nlet bufferDiferencia = flow.get(\"bufferDiferencia\") || [];\nlet salida5 = null;\nif (buffer[1].length && buffer[2].length) {\n    let ult1 = buffer[1][buffer[1].length - 1];\n    let ult2 = buffer[2][buffer[2].length - 1];\n\n    let puntoDif = { x: ts, y: ult1.y - ult2.y };\n    bufferDiferencia.push(puntoDif);\n    if (bufferDiferencia.length > 500) bufferDiferencia.shift();\n    flow.set(\"bufferDiferencia\", bufferDiferencia);\n\n    salida5 = {\n        payload: [{\n            series: [\"Pérdida entre Loc. A y B\"],\n            data: [bufferDiferencia],\n            labels: []\n        }]\n    };\n}\n\n// 📊 Nuevas salidas 6, 7, 8 para mediciones absolutas\nlet salida6 = loc === 1 ? { payload: [{ series: [nombres[1]], data: [bufferMediciones[1]], labels: [] }] } : null;\nlet salida7 = loc === 2 ? { payload: [{ series: [nombres[2]], data: [bufferMediciones[2]], labels: [] }] } : null;\nlet salida8 = loc === 3 ? { payload: [{ series: [nombres[3]], data: [bufferMediciones[3]], labels: [] }] } : null;\n\nreturn [salida1, salida2, salida3, salida4, salida5, salida6, salida7, salida8];\n",
+        "outputs": 8,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "ec5265db57a77887"
+            ],
+            [
+                "034b2859d756f2f8"
+            ],
+            [
+                "739479132bdaf586"
+            ],
+            [
+                "61469ecace2eee90"
+            ],
+            [
+                "c4c89e320462b539"
+            ],
+            [
+                "edcdcd6e176745c0"
+            ],
+            [
+                "bede6f93aa463e08"
+            ],
+            [
+                "5a78bebfcea1561b"
+            ]
+        ]
+    },
+    {
+        "id": "73f24eedca0dd9ec",
+        "type": "ui_button",
+        "z": "31f68e294bae2c1b",
+        "name": "Refrescar",
+        "group": "b6a37d8d725e7c37",
+        "order": 15,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Reanudar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "refresh",
+        "payload": "{\"reset\": true}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 520,
+        "y": 200,
+        "wires": [
+            [
+                "25a93da4c1ca44f1"
+            ]
+        ]
+    },
+    {
+        "id": "ec5265db57a77887",
+        "type": "ui_chart",
+        "z": "31f68e294bae2c1b",
+        "name": "Caudal por Localidad A",
+        "group": "b6a37d8d725e7c37",
+        "order": 9,
+        "width": 10,
+        "height": 4,
+        "label": "Caudal Loc. A (l/s)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#ff7f0e",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "034b2859d756f2f8",
+        "type": "ui_chart",
+        "z": "31f68e294bae2c1b",
+        "name": "Caudal por Localidad B",
+        "group": "b6a37d8d725e7c37",
+        "order": 10,
+        "width": 10,
+        "height": 4,
+        "label": "Caudal Loc. B (l/s)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#ff7f0e",
+            "#1f77b4",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 260,
+        "wires": [
+            [
+                "2af2095c9b2e1be4"
+            ]
+        ]
+    },
+    {
+        "id": "61469ecace2eee90",
+        "type": "ui_chart",
+        "z": "31f68e294bae2c1b",
+        "name": "Caudal por Localidad A vs B",
+        "group": "b6a37d8d725e7c37",
+        "order": 1,
+        "width": 14,
+        "height": 6,
+        "label": "Flujo General (l/s)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#ff7f0e",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4c89e320462b539",
+        "type": "ui_chart",
+        "z": "31f68e294bae2c1b",
+        "name": "Caudal Diferencia A vs B",
+        "group": "b6a37d8d725e7c37",
+        "order": 3,
+        "width": 14,
+        "height": 6,
+        "label": "Diferencia entre Flujos (l/s)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#ff7f0e",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "739479132bdaf586",
+        "type": "ui_chart",
+        "z": "31f68e294bae2c1b",
+        "name": "Caudal por Localidad C",
+        "group": "b6a37d8d725e7c37",
+        "order": 11,
+        "width": 9,
+        "height": 4,
+        "label": "Caudal Loc. C (l/s)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#2ca02c",
+            "#ff7f0e",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7db73a57e1e7a79",
+        "type": "ui_button",
+        "z": "31f68e294bae2c1b",
+        "name": "Limpiar Todo",
+        "group": "b6a37d8d725e7c37",
+        "order": 16,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Limpiar Todo",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 710,
+        "y": 200,
+        "wires": [
+            [
+                "ec5265db57a77887",
+                "034b2859d756f2f8",
+                "739479132bdaf586",
+                "61469ecace2eee90",
+                "c4c89e320462b539",
+                "edcdcd6e176745c0",
+                "bede6f93aa463e08",
+                "5a78bebfcea1561b"
+            ]
+        ]
+    },
+    {
+        "id": "7c6e55eb7ed0d4b5",
+        "type": "ui_switch",
+        "z": "31f68e294bae2c1b",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": true,
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": false,
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 490,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "edcdcd6e176745c0",
+        "type": "ui_chart",
+        "z": "31f68e294bae2c1b",
+        "name": "Mediciones por Localidad A",
+        "group": "b6a37d8d725e7c37",
+        "order": 12,
+        "width": 10,
+        "height": 4,
+        "label": "Medicion (litros)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#ff7f0e",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bede6f93aa463e08",
+        "type": "ui_chart",
+        "z": "31f68e294bae2c1b",
+        "name": "Mediciones por Localidad B",
+        "group": "b6a37d8d725e7c37",
+        "order": 13,
+        "width": 10,
+        "height": 4,
+        "label": "Medicion (litros)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#ff7f0e",
+            "#1f77b4",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a78bebfcea1561b",
+        "type": "ui_chart",
+        "z": "31f68e294bae2c1b",
+        "name": "Mediciones por Localidad C",
+        "group": "b6a37d8d725e7c37",
+        "order": 14,
+        "width": 9,
+        "height": 4,
+        "label": "Medicion (litros)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#2ca02c",
+            "#ff7f0e",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f437c741a1c737ed",
+        "type": "mysql",
+        "z": "4a85106a725bafbf",
+        "mydb": "387630998c9e2ce7",
+        "name": "MacProp_DB",
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "f43f156d2871d746",
+                "2df3a0ef204753f8",
+                "82821fea3b2d93bf"
+            ]
+        ]
+    },
+    {
+        "id": "941228c7e743057a",
+        "type": "ui_table",
+        "z": "4a85106a725bafbf",
+        "group": "dashboard_group",
+        "name": "Tabla Lista Valores",
+        "order": 3,
+        "width": 19,
+        "height": 8,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 1030,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2faca5c3dc2c3949",
+        "type": "ui_button",
+        "z": "4a85106a725bafbf",
+        "name": "Limpiar",
+        "group": "dashboard_group",
+        "order": 6,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Limpiar Todo",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 820,
+        "y": 220,
+        "wires": [
+            [
+                "941228c7e743057a",
+                "chart-node",
+                "7f8d84235fd6b62a"
+            ]
+        ]
+    },
+    {
+        "id": "9c4505b6ea6d39c2",
+        "type": "function",
+        "z": "4a85106a725bafbf",
+        "name": "Consulta SQL",
+        "func": "let payload = msg.payload;\nlet localidades = [];\n\n// Mapear localidades activadas\nif (payload.Barranquilla) localidades.push(\"1\");\nif (payload.Galapa) localidades.push(\"2\");\nif (payload.Malambo) localidades.push(\"3\");\n\nif (localidades.length === 0) {\n    node.error(\"No hay localidades activadas\");\n    return null;\n}\n\n// Fechas desde/hasta en formato ISO\nlet fechaDesde = payload.Desde;\nlet fechaHasta = payload.Hasta;\n\nif (!fechaDesde || !fechaHasta) {\n    node.error(\"Fechas 'Desde' y 'Hasta' son obligatorias\");\n    return null;\n}\n\n// Construir la consulta SQL\nmsg.topic = `\n    SELECT ID, FECHA_HORA, MEDICION, UNIDAD, LOCALIZACION, DISPOSITIVO\n    FROM DB_MacProp\n    WHERE LOCALIZACION IN (${localidades.join(\", \")})\n      AND FECHA_HORA BETWEEN '${fechaDesde}' AND '${fechaHasta}'\n    ORDER BY LOCALIZACION, FECHA_HORA;\n`;\n\nmsg.localidades = localidades;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 180,
+        "wires": [
+            [
+                "f437c741a1c737ed"
+            ]
+        ]
+    },
+    {
+        "id": "chart-node",
+        "type": "ui_chart",
+        "z": "4a85106a725bafbf",
+        "name": "Mediciones por Localidad",
+        "group": "dashboard_group",
+        "order": 4,
+        "width": 10,
+        "height": 7,
+        "label": "Medición por Localidad (litros)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#ff7f0e",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1050,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f43f156d2871d746",
+        "type": "function",
+        "z": "4a85106a725bafbf",
+        "name": "Formato Tabla_Tendencia",
+        "func": "const nombres = {                   // Correlacion de digito o valor a la localizacion correspondiente\n    1: \"Barranquilla\",\n    2: \"Galapa\",\n    3: \"Malambo\"\n};\n\nconst unidades = {                   // Correlacion de digito o valor a la unidad correspondiente\n    1: \"litro(s)\"\n};\n\nconst dispositivos = {                   // Correlacion de digito o valor al dispositivo correspondiente\n    1: \"LilyGO T-SIM7000G ESP32\"\n};\n\n// Convierte fecha UTC a hora local (Colombia)\nfunction ajustarZonaHoraria(utcString) {\n    let fechaUTC = new Date(utcString);\n    return fechaUTC.toLocaleString(\"es-CO\", {\n        timeZone: \"America/Bogota\",\n        hour12: false,\n        year: \"numeric\",\n        month: \"2-digit\",\n        day: \"2-digit\",\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        second: \"2-digit\"\n    }).replace(\",\", \"\"); // Eliminar coma si aparece\n}\n\nlet datos = msg.payload;\nlet seriesMap = {};\n\n// Clonar datos para visualizar en la Tabla y ajustar la hora + traducir claves de Localizacion, Unidad y Dispositivo\nlet datosTabla = datos.map(item => {\n    return {\n        ...item,\n        FECHA_HORA: ajustarZonaHoraria(item.FECHA_HORA),\n        LOCALIZACION: nombres[item.LOCALIZACION] || item.LOCALIZACION,\n        UNIDAD: unidades[item.UNIDAD] || item.UNIDAD,\n        DISPOSITIVO: dispositivos[item.DISPOSITIVO] || item.DISPOSITIVO\n    };\n});\n\n// Agrupar por LOCALIZACION\nfor (let item of datos) {\n    let loc = nombres[item.LOCALIZACION] || `Localidad ${item.LOCALIZACION}`;\n    if (!seriesMap[loc]) {\n        seriesMap[loc] = [];\n    }\n\n    // Convertir FECHA_HORA (UTC) a milisegundos y ajustar a zona horaria local\n    let fechaUtc = new Date(item.FECHA_HORA);\n    let offsetMs = fechaUtc.getTimezoneOffset() * 60 * 1000; // compensación del sistema en ms\n    let timestampLocal = fechaUtc.getTime() - offsetMs;\n\n    seriesMap[loc].push({\n        x: timestampLocal,  // timestamp en ms ajustado\n        y: item.MEDICION\n    });\n}\n\n// Estructura compatible con ui_chart en modo multiseries\nlet series = [];\nlet data = [];\n\nfor (let [name, puntos] of Object.entries(seriesMap)) {\n    series.push(name);\n    data.push(puntos);\n}\n\n// Salida 1 - Tendencia (iu_chart)\nlet salidaChart = {\n    payload: [{\n        series: series,\n        data: data,\n        labels: []\n    }]\n};\n\n// Salida 2 - Tabla con nombres descriptivos\nlet salidaTabla = {\n    payload: datosTabla\n};\n\nreturn [salidaChart, salidaTabla];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 180,
+        "wires": [
+            [
+                "chart-node"
+            ],
+            [
+                "941228c7e743057a"
+            ]
+        ]
+    },
+    {
+        "id": "00c7920cfd1ed96b",
+        "type": "debug",
+        "z": "4a85106a725bafbf",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "075eb2292864c6a3",
+        "type": "function",
+        "z": "4a85106a725bafbf",
+        "name": "Consulta SQL",
+        "func": "let payload = msg.payload;\nlet localidades = [];\n\nif (payload.Barranquilla) localidades.push(\"1\");\nif (payload.Galapa) localidades.push(\"2\");\nif (payload.Malambo) localidades.push(\"3\");\n\nif (localidades.length === 0) {\n    node.error(\"No hay localidades activadas\");\n    return null;\n}\n\nmsg.topic = `\n    SELECT ID, FECHA_HORA, MEDICION, UNIDAD, LOCALIZACION, DISPOSITIVO\n    FROM (\n        SELECT *,\n               ROW_NUMBER() OVER (PARTITION BY LOCALIZACION ORDER BY MEDICION DESC) as rn\n        FROM DB_MacProp\n        WHERE LOCALIZACION IN (${localidades.join(\", \")})\n    ) sub\n    WHERE rn <= 10;\n`;\n\nmsg.localidades = localidades;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3462943252ac328b",
+        "type": "ui_template",
+        "z": "4a85106a725bafbf",
+        "group": "dashboard_group",
+        "name": "Consulta_Script",
+        "order": 1,
+        "width": 9,
+        "height": 5,
+        "format": "<div class=\"form-card\">\n    <h3>Consulta de Datos</h3>\n    <p class=\"label\">Seleccione localidad(es):</p>\n\n    <div class=\"row checkboxes\">\n        <label class=\"checkbox-label\">\n      <input type=\"checkbox\" ng-model=\"localidades.Barranquilla\" />\n      <span>Barranquilla</span>\n    </label>\n        <label class=\"checkbox-label\">\n      <input type=\"checkbox\" ng-model=\"localidades.Galapa\" />\n      <span>Galapa</span>\n    </label>\n        <label class=\"checkbox-label\">\n      <input type=\"checkbox\" ng-model=\"localidades.Malambo\" />\n      <span>Malambo</span>\n    </label>\n    </div>\n\n    <div class=\"row dates\">\n        <div class=\"input-group\">\n            <label>Desde:</label>\n            <input type=\"date\" ng-model=\"fechaDesde\" required />\n        </div>\n        <div class=\"input-group\">\n            <label>Hasta:</label>\n            <input type=\"date\" ng-model=\"fechaHasta\" required />\n        </div>\n    </div>\n\n    <div class=\"row buttons\">\n        <button class=\"action-btn primary\" ng-click=\"enviarDatos()\">CONSULTAR</button>\n        <button class=\"action-btn cancel\" ng-click=\"cancelar()\">CANCELAR</button>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n  scope.localidades = {\n    Barranquilla: false,\n    Galapa: false,\n    Malambo: false\n  };\n\n  scope.enviarDatos = function() {\n    if (!scope.fechaDesde || !scope.fechaHasta) {\n      alert(\"Debe seleccionar ambas fechas.\");\n      return;\n    }\n\n    const payload = {\n      Barranquilla: scope.localidades.Barranquilla,\n      Galapa: scope.localidades.Galapa,\n      Malambo: scope.localidades.Malambo,\n      Desde: new Date(scope.fechaDesde).toISOString(),\n      Hasta: new Date(scope.fechaHasta).toISOString()\n    };\n\n    scope.send({ payload });\n  };\n\n  scope.cancelar = function() {\n    scope.localidades = {\n      Barranquilla: false,\n      Galapa: false,\n      Malambo: false\n    };\n    scope.fechaDesde = null;\n    scope.fechaHasta = null;\n  };\n})(scope);\n</script>\n\n<style>\n    .form-card {\n        background: #fff;\n        padding: 10px 30px;\n        border-radius: 12px;\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n        font-family: \"Segoe UI\", sans-serif;\n        max-width: 600px;\n        margin: auto;\n        text-align: center;\n    }\n\n    .form-card h3 {\n        font-weight: bold;\n        margin-bottom: 15px;\n        color: #222;\n    }\n\n    .label {\n        font-weight: 600;\n        margin-bottom: 10px;\n        color: #333;\n    }\n\n    .row {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 20px;\n        flex-wrap: wrap;\n        margin-bottom: 10px;\n    }\n\n    .checkboxes {\n        gap: 40px;\n    }\n\n    .checkbox-label {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        font-size: 14px;\n    }\n\n    .checkbox-label input[type=\"checkbox\"] {\n        width: 20px;\n        height: 20px;\n        margin-bottom: 5px;\n    }\n\n    .input-group {\n        display: flex;\n        flex-direction: column;\n        font-size: 14px;\n    }\n\n    .input-group input[type=\"date\"] {\n        padding: 6px 10px;\n        font-size: 14px;\n        border-radius: 4px;\n        border: 1px solid #ccc;\n        width: 150px;\n    }\n\n    .buttons {\n        gap: 25px;\n        margin-top: 10px;\n    }\n\n    .action-btn {\n        padding: 10px 20px;\n        font-size: 14px;\n        font-weight: 600;\n        border: none;\n        border-radius: 6px;\n        cursor: pointer;\n        min-width: 130px;\n        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n    }\n\n    .primary {\n        background-color: #1E88E5;\n        color: white;\n    }\n\n    .cancel {\n        background-color: #F44336;\n        color: white;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "9c4505b6ea6d39c2"
+            ]
+        ]
+    },
+    {
+        "id": "2df3a0ef204753f8",
+        "type": "function",
+        "z": "4a85106a725bafbf",
+        "name": "Formato Caudal L/s",
+        "func": "const nombres = {\n    1: \"Barranquilla\",\n    2: \"Galapa\",\n    3: \"Malambo\"\n};\n\n// Convierte fecha UTC a hora local (Colombia)\nfunction ajustarZonaHoraria(utcString) {\n    let fechaUTC = new Date(utcString);\n    return fechaUTC.toLocaleString(\"es-CO\", {\n        timeZone: \"America/Bogota\",\n        hour12: false,\n        year: \"numeric\",\n        month: \"2-digit\",\n        day: \"2-digit\",\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        second: \"2-digit\"\n    }).replace(\",\", \"\");\n}\n\nlet datos = msg.payload;\nlet caudalPorLocalidad = {};\n\n// Agrupar por LOCALIZACION\nfor (let item of datos) {\n    let loc = nombres[item.LOCALIZACION] || `Localidad ${item.LOCALIZACION}`;\n    if (!caudalPorLocalidad[loc]) {\n        caudalPorLocalidad[loc] = [];\n    }\n\n    caudalPorLocalidad[loc].push(item);\n}\n\nlet series = [];\nlet data = [];\n\nfor (let [loc, registros] of Object.entries(caudalPorLocalidad)) {\n    // Ordenar por fecha\n    registros.sort((a, b) => {\n        let fechaA = new Date(a.FECHA_HORA);\n        let fechaB = new Date(b.FECHA_HORA);\n        return fechaA.getTime() - fechaB.getTime();\n    });\n\n\n    let puntos = [];\n\n    for (let i = 1; i < registros.length; i++) {\n        let actual = registros[i];\n        let anterior = registros[i - 1];\n\n        let fechaActual = new Date(actual.FECHA_HORA);\n        let fechaAnterior = new Date(anterior.FECHA_HORA);\n\n        let tiempoActual = fechaActual.getTime();\n        let tiempoAnterior = fechaAnterior.getTime();\n\n        //let deltaMin = (tiempoActual - tiempoAnterior) / (1000 * 60);     // minutos\n        let deltaSeg = (tiempoActual - tiempoAnterior) / 1000;              // en segundos\n        let deltaMedicion = actual.MEDICION - anterior.MEDICION;     \n\n        if (deltaSeg > 0) {                                                 // si se va mostrar registros en L/min cambiar por deltaMin\n            let caudal = deltaMedicion / deltaSeg;\n            let timestampLocal = tiempoActual - fechaActual.getTimezoneOffset() * 60000;\n\n            puntos.push({\n                x: timestampLocal,\n                y: caudal\n            });\n        }\n    }\n\n    if (puntos.length > 0) {\n        series.push(loc);\n        data.push(puntos);\n    }\n}\n\n\nlet salidaChartCaudal = {\n    payload: [{\n        series: series,\n        data: data,\n        labels: []\n    }]\n};\n\nreturn [salidaChartCaudal];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 260,
+        "wires": [
+            [
+                "7f8d84235fd6b62a",
+                "00c7920cfd1ed96b"
+            ]
+        ]
+    },
+    {
+        "id": "7f8d84235fd6b62a",
+        "type": "ui_chart",
+        "z": "4a85106a725bafbf",
+        "name": "Caudal por Localidad",
+        "group": "dashboard_group",
+        "order": 2,
+        "width": 20,
+        "height": 5,
+        "label": "Caudal (l/s)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "Sin datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#ff7f0e",
+            "#2ca02c",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1040,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98ae6a50020790b8",
+        "type": "function",
+        "z": "4a85106a725bafbf",
+        "name": "Formato Tabla_Tendencia",
+        "func": "const nombres = {\n    1: \"Barranquilla\",\n    2: \"Galapa\",\n    3: \"Malambo\"\n};\n\n// Convierte fecha UTC a hora local (Colombia)\nfunction ajustarZonaHoraria(utcString) {\n    let fechaUTC = new Date(utcString);\n    return fechaUTC.toLocaleString(\"es-CO\", {\n        timeZone: \"America/Bogota\",\n        hour12: false,\n        year: \"numeric\",\n        month: \"2-digit\",\n        day: \"2-digit\",\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        second: \"2-digit\"\n    }).replace(\",\", \"\"); // Eliminar coma si aparece\n}\n\nlet datos = msg.payload;\nlet seriesMap = {};\n\n// Clonar datos para la tabla y ajustar la hora\nlet datosTabla = datos.map(item => {\n    return {\n        ...item,\n        FECHA_HORA: ajustarZonaHoraria(item.FECHA_HORA)\n    };\n});\n\n// Agrupar por LOCALIZACION\nfor (let item of datos) {\n    let loc = nombres[item.LOCALIZACION] || `Localidad ${item.LOCALIZACION}`;\n    if (!seriesMap[loc]) {\n        seriesMap[loc] = [];\n    }\n\n    // Convertir FECHA_HORA (UTC) a milisegundos y ajustar a zona horaria local\n    let fechaUtc = new Date(item.FECHA_HORA);\n    let offsetMs = fechaUtc.getTimezoneOffset() * 60 * 1000; // compensación del sistema en ms\n    let timestampLocal = fechaUtc.getTime() - offsetMs;\n\n    seriesMap[loc].push({\n        x: timestampLocal,  // timestamp en ms ajustado\n        y: item.MEDICION\n    });\n}\n\n// Estructura compatible con ui_chart en modo multiseries\nlet series = [];\nlet data = [];\n\nfor (let [name, puntos] of Object.entries(seriesMap)) {\n    series.push(name);\n    data.push(puntos);\n}\n\n// Salida 1 - Tendencia (iu_chart)\nlet salidaChart = {\n    payload: [{\n        series: series,\n        data: data,\n        labels: []\n    }]\n};\n\n// Salida 2 - Tabla\nlet salidaTabla = {\n    payload: datosTabla\n};\n\nreturn [salidaChart, salidaTabla];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "82821fea3b2d93bf",
+        "type": "debug",
+        "z": "4a85106a725bafbf",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "ced39b8bb486e705",
+        "type": "debug",
+        "z": "6d4fbd3d446b2312",
+        "name": "Últimos registros",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f00ec66ceec0436c",
+        "type": "ui_dropdown",
+        "z": "6d4fbd3d446b2312",
+        "name": "Loc A",
+        "label": "Localidad A",
+        "tooltip": "",
+        "place": "Selecciona",
+        "group": "d230c3ce7cc85156",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Barranquilla",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Galapa",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "Malambo",
+                "value": "3",
+                "type": "str"
+            }
+        ],
+        "topic": "A",
+        "topicType": "str",
+        "className": "",
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "39113bb12091a3b9"
+            ]
+        ]
+    },
+    {
+        "id": "39113bb12091a3b9",
+        "type": "function",
+        "z": "6d4fbd3d446b2312",
+        "name": "Esperar A y B",
+        "func": "flow.set(msg.topic, msg.payload);\n\nlet A = flow.get(\"A\");\nlet B = flow.get(\"B\");\n\nif (A && B && A !== B) {\n    msg.payload = { A, B };\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "029b118690c656ba"
+            ]
+        ]
+    },
+    {
+        "id": "029b118690c656ba",
+        "type": "function",
+        "z": "6d4fbd3d446b2312",
+        "name": "Consulta SQL",
+        "func": "let A = msg.payload.A;\nlet B = msg.payload.B;\n\nmsg.topic = `\n  SELECT ID, FECHA_HORA, MEDICION, UNIDAD, LOCALIZACION, DISPOSITIVO\n  FROM (\n    SELECT *,\n           ROW_NUMBER() OVER (PARTITION BY LOCALIZACION ORDER BY FECHA_HORA DESC) AS rn\n    FROM DB_MacProp\n    WHERE LOCALIZACION IN (${A}, ${B})\n  ) sub\n  WHERE rn <= 10;\n`;\n\nmsg.localidades = { A, B };\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "61bdab1fa3f9d47c"
+            ]
+        ]
+    },
+    {
+        "id": "a75fbc3391fc3257",
+        "type": "function",
+        "z": "6d4fbd3d446b2312",
+        "name": "Comparar mediciones",
+        "func": "const nombres = {\n    1: \"Barranquilla\",\n    2: \"Galapa\",\n    3: \"Malambo\"\n};\n\nconst unidades = {\n    1: \"litro(s)\"\n};\n\nconst dispositivos = {\n    1: \"LilyGO T-SIM7000G ESP32\"\n};\n\n// Convierte fecha UTC a hora local (Colombia)\nfunction ajustarZonaHoraria(utcString) {\n    let fechaUTC = new Date(utcString);\n    return fechaUTC.toLocaleString(\"es-CO\", {\n        timeZone: \"America/Bogota\",\n        hour12: false,\n        year: \"numeric\",\n        month: \"2-digit\",\n        day: \"2-digit\",\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        second: \"2-digit\"\n    }).replace(\",\", \"\");\n}\n\nlet datos = msg.payload;\nlet seriesMap = {};\n\n// Clonar datos para visualizar en la Tabla y ajustar la hora + traducir claves\nlet datosTabla = datos.map(item => {\n    return {\n        ...item,\n        FECHA_HORA: ajustarZonaHoraria(item.FECHA_HORA),\n        LOCALIZACION: nombres[item.LOCALIZACION] || item.LOCALIZACION,\n        UNIDAD: unidades[item.UNIDAD] || item.UNIDAD,\n        DISPOSITIVO: dispositivos[item.DISPOSITIVO] || item.DISPOSITIVO\n    };\n});\n\n// Agrupar por LOCALIZACION para el grafico\nfor (let item of datos) {\n    let loc = nombres[item.LOCALIZACION] || `Localidad ${item.LOCALIZACION}`;\n    if (!seriesMap[loc]) {\n        seriesMap[loc] = [];\n    }\n\n    let fechaUtc = new Date(item.FECHA_HORA);\n    let offsetMs = fechaUtc.getTimezoneOffset() * 60 * 1000;\n    let timestampLocal = fechaUtc.getTime() - offsetMs;\n\n    seriesMap[loc].push({\n        x: timestampLocal,\n        y: item.MEDICION\n    });\n}\n\nlet series = [];\nlet data = [];\n\nfor (let [name, puntos] of Object.entries(seriesMap)) {\n    series.push(name);\n    data.push(puntos);\n}\n\n// Detectar diferencia entre 2 localidades para estado y alerta\nlet l1 = datos.find(r => r.LOCALIZACION === 1);\nlet l2 = datos.find(r => r.LOCALIZACION === 2);\n\nlet estado = \"Desconocido\";\nlet diferencia = null;\n\nif (l1 && l2) {\n    diferencia = Math.abs(l1.MEDICION - l2.MEDICION);\n    estado = diferencia > 5 ? \"❌ Anomalía detectada\" : \"✅ Normal\";\n}\n\n// Salida 1: Tendencia (ui_chart)\nlet salidaChart = {\n    payload: [{\n        series: series,\n        data: data,\n        labels: []\n    }]\n};\n\n// Salida 2: Tabla descriptiva\nlet salidaTabla = {\n    payload: datosTabla\n};\n\n// Salida 3: Estado\nlet salidaEstado = {\n    payload: estado\n};\n\n// Salida 4: Diferencia\nlet salidaDiferencia = {\n    payload: diferencia !== null ? `${diferencia} litros` : \"N/A\"\n};\n\nreturn [salidaTabla, salidaEstado, salidaDiferencia, salidaChart];\n",
+        "outputs": 4,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 320,
+        "wires": [
+            [
+                "714547ea10e7174f"
+            ],
+            [
+                "e34ef621b219808a"
+            ],
+            [
+                "547e6fe3a26e99ff"
+            ],
+            [
+                "ui_chart_test"
+            ]
+        ]
+    },
+    {
+        "id": "714547ea10e7174f",
+        "type": "ui_table",
+        "z": "6d4fbd3d446b2312",
+        "group": "d230c3ce7cc85156",
+        "name": "Resultado tabla",
+        "order": 6,
+        "width": 15,
+        "height": 5,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 1000,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e34ef621b219808a",
+        "type": "ui_text",
+        "z": "6d4fbd3d446b2312",
+        "group": "d230c3ce7cc85156",
+        "order": 9,
+        "width": 6,
+        "height": 1,
+        "name": "Estados",
+        "label": "Estado:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "16",
+        "color": "#797979",
+        "x": 980,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "547e6fe3a26e99ff",
+        "type": "ui_text",
+        "z": "6d4fbd3d446b2312",
+        "group": "d230c3ce7cc85156",
+        "order": 7,
+        "width": 4,
+        "height": 1,
+        "name": "Diferencia",
+        "label": "Diferencia:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "",
+        "color": "#797979",
+        "x": 980,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f6a541300b7b7710",
+        "type": "ui_dropdown",
+        "z": "6d4fbd3d446b2312",
+        "name": "Loc B",
+        "label": "Localidad B",
+        "tooltip": "",
+        "place": "Selecciona",
+        "group": "d230c3ce7cc85156",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Barranquilla",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Galapa",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "Malambo",
+                "value": "3",
+                "type": "str"
+            }
+        ],
+        "topic": "B",
+        "topicType": "str",
+        "className": "",
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "39113bb12091a3b9"
+            ]
+        ]
+    },
+    {
+        "id": "97d88ec2426a9b17",
+        "type": "debug",
+        "z": "6d4fbd3d446b2312",
+        "name": "Últimos registros",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "61bdab1fa3f9d47c",
+        "type": "mysql",
+        "z": "6d4fbd3d446b2312",
+        "mydb": "387630998c9e2ce7",
+        "name": "MacProp_DB",
+        "x": 510,
+        "y": 320,
+        "wires": [
+            [
+                "a75fbc3391fc3257"
+            ]
+        ]
+    },
+    {
+        "id": "591390b690212d41",
+        "type": "ui_media",
+        "z": "6d4fbd3d446b2312",
+        "group": "d230c3ce7cc85156",
+        "name": "Micromedidores",
+        "width": 15,
+        "height": 4,
+        "order": 5,
+        "category": "Micromedidores",
+        "file": "Micromedidores.png",
+        "layout": "center",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 120,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb75a918de1c5169",
+        "type": "ui_text",
+        "z": "6d4fbd3d446b2312",
+        "group": "d230c3ce7cc85156",
+        "order": 1,
+        "width": 15,
+        "height": 1,
+        "name": "Seleccionar Localidad",
+        "label": "Seleccione las localidades a comparar",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": 16,
+        "color": "#797979",
+        "x": 140,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "529f8ff2b40f6e35",
+        "type": "ui_button",
+        "z": "6d4fbd3d446b2312",
+        "name": "Ir Consultas",
+        "group": "a904a659376a85c9",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Consultas",
+        "tooltip": "Enlace para ir a Consultas",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "search",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "188dc6ee8dbd14c7"
+            ]
+        ]
+    },
+    {
+        "id": "188dc6ee8dbd14c7",
+        "type": "function",
+        "z": "6d4fbd3d446b2312",
+        "name": "Establecer pestaña en Consultas",
+        "func": "msg.payload = { tab: \"Consultas\" };\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 120,
+        "wires": [
+            [
+                "94b0268c6eb65a8d"
+            ]
+        ]
+    },
+    {
+        "id": "94b0268c6eb65a8d",
+        "type": "ui_ui_control",
+        "z": "6d4fbd3d446b2312",
+        "name": "",
+        "events": "all",
+        "x": 640,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "774d50417f130f55",
+        "type": "ui_button",
+        "z": "6d4fbd3d446b2312",
+        "name": "Ir Comparaciones",
+        "group": "a904a659376a85c9",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Comparaciones",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "compare",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "95acca10e49d0910"
+            ]
+        ]
+    },
+    {
+        "id": "95acca10e49d0910",
+        "type": "function",
+        "z": "6d4fbd3d446b2312",
+        "name": "Establecer pestaña en Comparaciones",
+        "func": "msg.payload = { tab: \"Comparaciones\" };\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "f9c0eaadf9f27e16"
+            ]
+        ]
+    },
+    {
+        "id": "f9c0eaadf9f27e16",
+        "type": "ui_ui_control",
+        "z": "6d4fbd3d446b2312",
+        "name": "",
+        "events": "all",
+        "x": 620,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f876af4877f624a0",
+        "type": "ui_button",
+        "z": "6d4fbd3d446b2312",
+        "name": "Limpiar",
+        "group": "d230c3ce7cc85156",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Limpiar Todo",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 380,
+        "wires": [
+            [
+                "4f6496d0c0a2f500",
+                "f00ec66ceec0436c",
+                "f6a541300b7b7710"
+            ]
+        ]
+    },
+    {
+        "id": "4f6496d0c0a2f500",
+        "type": "function",
+        "z": "6d4fbd3d446b2312",
+        "name": "L_Tabla/Est_Dif",
+        "func": "let estado = \"\";\nlet tabla = [];\n\n// Salida 1: Tabla\nlet limpiarTabla = {\n    payload: tabla\n};\n\n// Salida 2: Estado\nlet limpiarEstado_Diferencia = {\n    payload: estado\n};\n\nreturn [limpiarTabla, limpiarEstado_Diferencia];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 380,
+        "wires": [
+            [
+                "714547ea10e7174f",
+                "ui_chart_test"
+            ],
+            [
+                "e34ef621b219808a",
+                "547e6fe3a26e99ff"
+            ]
+        ]
+    },
+    {
+        "id": "a64e57a55331f785",
+        "type": "function",
+        "z": "6d4fbd3d446b2312",
+        "d": true,
+        "name": "SELECT últimos 10",
+        "func": "msg.topic = \"SELECT * FROM DB_MacProp ORDER BY MEDICION DESC LIMIT 20;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da_verificar",
+        "type": "inject",
+        "z": "6d4fbd3d446b2312",
+        "d": true,
+        "name": "Verificar cada 5s",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "",
+        "x": 250,
+        "y": 540,
+        "wires": [
+            [
+                "a64e57a55331f785"
+            ]
+        ]
+    },
+    {
+        "id": "ui_chart_test",
+        "type": "ui_chart",
+        "z": "6d4fbd3d446b2312",
+        "name": "Mediciones por Localidad",
+        "group": "da_ui_group",
+        "order": 1,
+        "width": 14,
+        "height": 8,
+        "label": "Mediciones por Localidad (litros)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "YY-M-D H:m:s",
+        "interpolate": "linear",
+        "nodata": "No hay datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#ff7f0e",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1030,
+        "y": 380,
+        "wires": [
+            []
+        ],
+        "inputLabels": [
+            "{   \"series\": [...],   \"data\": [...],   \"labels\": [...] }"
+        ]
+    },
+    {
+        "id": "0b69e02e28a60f59",
+        "type": "debug",
+        "z": "6d4fbd3d446b2312",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "0bbf7dd44baa6efb",
+        "type": "function",
+        "z": "6d4fbd3d446b2312",
+        "name": "Formato Grafica",
+        "func": "const nombres = {\n    1: \"Barranquilla\",\n    2: \"Galapa\",\n    3: \"Malambo\"\n};\n\n// Convierte fecha UTC a hora local (Colombia)\nfunction ajustarZonaHoraria(utcString) {\n    let fechaUTC = new Date(utcString);\n    return fechaUTC.toLocaleString(\"es-CO\", {\n        timeZone: \"America/Bogota\",\n        hour12: false,\n        year: \"numeric\",\n        month: \"2-digit\",\n        day: \"2-digit\",\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        second: \"2-digit\"\n    }).replace(\",\", \"\"); // Eliminar coma si aparece\n}\n\nlet datos = msg.payload;\nlet seriesMap = {};\n\n// Clonar datos para la tabla y ajustar la hora\nlet datosTabla = datos.map(item => {\n    return {\n        ...item,\n        FECHA_HORA: ajustarZonaHoraria(item.FECHA_HORA)\n    };\n});\n\n// Agrupar por LOCALIZACION\nfor (let item of datos) {\n    let loc = nombres[item.LOCALIZACION] || `Localidad ${item.LOCALIZACION}`;\n    if (!seriesMap[loc]) {\n        seriesMap[loc] = [];\n    }\n\n    // Convertir FECHA_HORA (UTC) a milisegundos y ajustar a zona horaria local\n    let fechaUtc = new Date(item.FECHA_HORA);\n    let offsetMs = fechaUtc.getTimezoneOffset() * 60 * 1000; // compensación del sistema en ms\n    let timestampLocal = fechaUtc.getTime() - offsetMs;\n\n    seriesMap[loc].push({\n        x: timestampLocal,  // timestamp en ms ajustado\n        y: item.MEDICION\n    });\n}\n\n// Estructura compatible con ui_chart en modo multiseries\nlet series = [];\nlet data = [];\n\nfor (let [name, puntos] of Object.entries(seriesMap)) {\n    series.push(name);\n    data.push(puntos);\n}\n\n// Salida 1 - Tendencia (iu_chart)\nlet salidaChart = {\n    payload: [{\n        series: series,\n        data: data,\n        labels: []\n    }]\n};\n\n// Salida 2 - Tabla\nlet salidaTabla = {\n    payload: datosTabla\n};\n\nreturn [salidaChart, salidaTabla];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27eef1a3ca212504",
+        "type": "function",
+        "z": "6d4fbd3d446b2312",
+        "name": "Comparar mediciones",
+        "func": "const nombres = {                   // Correlacion de digito o valor a la localizacion correspondiente\n    1: \"Barranquilla\",\n    2: \"Galapa\",\n    3: \"Malambo\"\n};\n\nconst unidades = {                   // Correlacion de digito o valor a la unidad correspondiente\n    1: \"litro(s)\"\n};\n\nconst dispositivos = {                   // Correlacion de digito o valor al dispositivo correspondiente\n    1: \"LilyGO T-SIM7000G ESP32\"\n};\n\n// Convierte fecha UTC a hora local (Colombia)\nfunction ajustarZonaHoraria(utcString) {\n    let fechaUTC = new Date(utcString);\n    return fechaUTC.toLocaleString(\"es-CO\", {\n        timeZone: \"America/Bogota\",\n        hour12: false,\n        year: \"numeric\",\n        month: \"2-digit\",\n        day: \"2-digit\",\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        second: \"2-digit\"\n    }).replace(\",\", \"\"); // Eliminar coma si aparece\n}\n\nlet l1 = null;\nlet l2 = null;\n\nfor (let row of msg.payload) {\n    if (row.LOCALIZACION === 1 && !l1) l1 = row;\n    if (row.LOCALIZACION === 2 && !l2) l2 = row;\n    if (l1 && l2) break;\n}\n\nlet estado = \"Desconocido\";\nlet diferencia = null;\n\nif (l1 && l2) {\n    diferencia = Math.abs(l1.MEDICION - l2.MEDICION);\n    estado = diferencia > 5 ? \"❌ Anomalía detectada\" : \"✅ Normal\";\n}\n\n// Salida 1: Tabla\nlet salidaTabla = {\n    payload: [l1 || { LOCALIZACION: 1, MEDICION: null }, l2 || { LOCALIZACION: 2, MEDICION: null }]\n};\n\n// Salida 2: Estado\nlet salidaEstado = {\n    payload: estado\n};\n\n// Salida 3: Diferencia numérica\nlet salidaDiferencia = {\n    payload: diferencia !== null ? `${diferencia} litros` : \"N/A\"\n};\n\nreturn [salidaTabla, salidaEstado, salidaDiferencia];",
+        "outputs": 3,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 480,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bf2e97cccb7734df",
+        "type": "debug",
+        "z": "42a4cc9d447f2f39",
+        "name": "Monitor",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "0e32e309b9fd3282",
+        "type": "mysql",
+        "z": "42a4cc9d447f2f39",
+        "d": true,
+        "mydb": "387630998c9e2ce7",
+        "name": "MacProp_DB",
+        "x": 550,
+        "y": 340,
+        "wires": [
+            [
+                "bf2e97cccb7734df"
+            ]
+        ]
+    },
+    {
+        "id": "97d0c344f3515b2c",
+        "type": "inject",
+        "z": "42a4cc9d447f2f39",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"FechaHora\":\"2025-05-02_08:54:50\",\"Medicion\":5360,\"UndMedida\":1,\"Localizacion\":1} {\"FechaHora\":\"2025-05-02_08:54:50\",\"Medicion\":5361,\"UndMedida\":1,\"Localizacion\":1}",
+        "payloadType": "str",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "07cd54b459538074"
+            ]
+        ]
+    },
+    {
+        "id": "24d55a6b07dc9390",
+        "type": "function",
+        "z": "42a4cc9d447f2f39",
+        "name": "function 3",
+        "func": "var fechaHora = msg.payload.FechaHora;\nvar medicion = msg.payload.Medicion;\nvar undMedida = msg.payload.UndMedida;\nvar loacalizacion = msg.payload.Localizacion;\nvar msg = {\n    \"payload\":[fechaHora, medicion, undMedida, loacalizacion],\n    \"topic\":\"INSERT INTO `DB_MacProp` (`ID`, `FECHA_HORA`, `MEDICION`, `UNIDAD`, `LOCALIZACION`) VALUES (NULL, ?, ?, ?, ?);\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 280,
+        "wires": [
+            [
+                "6d0d7ef20e863327",
+                "0e32e309b9fd3282"
+            ]
+        ]
+    },
+    {
+        "id": "c4ed5583e1dd6692",
+        "type": "json",
+        "z": "42a4cc9d447f2f39",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "24d55a6b07dc9390"
+            ]
+        ]
+    },
+    {
+        "id": "07cd54b459538074",
+        "type": "split",
+        "z": "42a4cc9d447f2f39",
+        "name": "",
+        "splt": " ",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "c4ed5583e1dd6692"
+            ]
+        ]
+    },
+    {
+        "id": "8a0a497849927fbd",
+        "type": "comment",
+        "z": "42a4cc9d447f2f39",
+        "name": "Creacion de Dividir JSON",
+        "info": "Mejora:\nCon la finalidad de poder recibir \nen el envio 2 lineas de los JSON y así\nreducir el tiempo de recepción de datos\nen el envío.\n\nPara el caso de la recepcion por MQTT\nse usa la expresion en Dividir usando \"\\n\" \n\nPara el caso de la recepcion por Inyectar\nse usa la expresion en Dividir usando \" \" ",
+        "x": 370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6d0d7ef20e863327",
+        "type": "debug",
+        "z": "42a4cc9d447f2f39",
+        "name": "Monitor 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "mq_recibe",
+        "type": "mqtt in",
+        "z": "5341bd8a04ff6e01",
+        "d": true,
+        "name": "MQTT Entrada",
+        "topic": "indu/medidor/001/dato",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c9c1418d72958be4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 180,
+        "wires": [
+            [
+                "split_lineas"
+            ]
+        ]
+    },
+    {
+        "id": "split_lineas",
+        "type": "split",
+        "z": "5341bd8a04ff6e01",
+        "name": "Dividir líneas",
+        "splt": " ",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "json_conv"
+            ]
+        ]
+    },
+    {
+        "id": "json_conv",
+        "type": "json",
+        "z": "5341bd8a04ff6e01",
+        "name": "Parsear JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 600,
+        "y": 180,
+        "wires": [
+            [
+                "acumular",
+                "2056f9e083cf06a2"
+            ]
+        ]
+    },
+    {
+        "id": "acumular",
+        "type": "function",
+        "z": "5341bd8a04ff6e01",
+        "name": "Acumular en buffer",
+        "func": "let buffer = flow.get(\"buffer\") || [];\nbuffer.push(msg.payload);\nflow.set(\"buffer\", buffer);\nreturn null;",
+        "outputs": 0,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "temporizador",
+        "type": "inject",
+        "z": "5341bd8a04ff6e01",
+        "name": "Cada 5s",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "",
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "gen_sql"
+            ]
+        ]
+    },
+    {
+        "id": "gen_sql",
+        "type": "function",
+        "z": "5341bd8a04ff6e01",
+        "name": "Generar SQL múltiple",
+        "func": "let buffer = flow.get(\"buffer\") || [];\nif (buffer.length === 0) return null;\n\nlet sql = \"INSERT INTO DB_MacProp (`FECHA_HORA`, `MEDICION`, `UNIDAD`, `LOCALIZACION`) VALUES \";\nlet filas = buffer.map(d => `('${d.FechaHora}', ${d.Medicion}, ${d.UndMedida}, ${d.Localizacion})`);\nsql += filas.join(\", \") + \";\";\n\nflow.set(\"buffer\", []);  // limpiar\nreturn { topic: sql };",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "mysql",
+                "debug_sql"
+            ]
+        ]
+    },
+    {
+        "id": "mysql",
+        "type": "mysql",
+        "z": "5341bd8a04ff6e01",
+        "d": true,
+        "mydb": "387630998c9e2ce7",
+        "name": "MySQL CleverCloud",
+        "x": 750,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "debug_sql",
+        "type": "debug",
+        "z": "5341bd8a04ff6e01",
+        "name": "SQL generado",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "x": 750,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e2388d4c97dbd771",
+        "type": "inject",
+        "z": "5341bd8a04ff6e01",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"FechaHora\":\"2025-05-02_10:03:54\",\"Medicion\":5372,\"UndMedida\":1,\"Localizacion\":1} {\"FechaHora\":\"2025-05-02_10:03:56\",\"Medicion\":5373,\"UndMedida\":1,\"Localizacion\":1}",
+        "payloadType": "str",
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "split_lineas"
+            ]
+        ]
+    },
+    {
+        "id": "2056f9e083cf06a2",
+        "type": "debug",
+        "z": "5341bd8a04ff6e01",
+        "name": "Monitor 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "626dba5931e4d3ee",
+        "type": "mysql",
+        "z": "8a4b8e583563a5c9",
+        "d": true,
+        "mydb": "387630998c9e2ce7",
+        "name": "MacProp_DB",
+        "x": 990,
+        "y": 520,
+        "wires": [
+            [
+                "4973c5b364b083d2"
+            ]
+        ]
+    },
+    {
+        "id": "404e23f16dfa3145",
+        "type": "inject",
+        "z": "8a4b8e583563a5c9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"FechaHora\":\"2025-05-02_10:03:54\",\"Medicion\":5372,\"UndMedida\":1,\"Localizacion\":1} {\"FechaHora\":\"2025-05-02_10:03:56\",\"Medicion\":5373,\"UndMedida\":1,\"Localizacion\":1}",
+        "payloadType": "str",
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "b126522080925898",
+                "5f1c59dd9d152486"
+            ]
+        ]
+    },
+    {
+        "id": "1f929d58a6d726c6",
+        "type": "function",
+        "z": "8a4b8e583563a5c9",
+        "name": "function 2",
+        "func": "var fechaHora = msg.payload.FechaHora;\nvar medicion = msg.payload.Medicion;\nvar undMedida = msg.payload.UndMedida;\nvar loacalizacion = msg.payload.Localizacion;\nvar msg = {\n    \"payload\":[fechaHora, medicion, undMedida, loacalizacion],\n    \"topic\":\"INSERT INTO `DB_MacProp` (`ID`, `FECHA_HORA`, `MEDICION`, `UNIDAD`, `LOCALIZACION`) VALUES (NULL, ?, ?, ?, ?);\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 400,
+        "wires": [
+            [
+                "5a1595a6b34f9653"
+            ]
+        ]
+    },
+    {
+        "id": "9f26bb2265cfe658",
+        "type": "json",
+        "z": "8a4b8e583563a5c9",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 750,
+        "y": 400,
+        "wires": [
+            [
+                "fa9f15a8de5b59ed",
+                "5a1595a6b34f9653"
+            ]
+        ]
+    },
+    {
+        "id": "5a1595a6b34f9653",
+        "type": "debug",
+        "z": "8a4b8e583563a5c9",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b126522080925898",
+        "type": "split",
+        "z": "8a4b8e583563a5c9",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "9c1444f6c331e0a4"
+            ]
+        ]
+    },
+    {
+        "id": "97fe21f9219a1fc5",
+        "type": "mqtt in",
+        "z": "8a4b8e583563a5c9",
+        "d": true,
+        "name": "",
+        "topic": "indu/medidor/001/dato",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c9c1418d72958be4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 369.28125,
+        "y": 215.09375,
+        "wires": [
+            [
+                "b126522080925898"
+            ]
+        ]
+    },
+    {
+        "id": "a98007832da4d9d6",
+        "type": "change",
+        "z": "8a4b8e583563a5c9",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "_",
+                "fromt": "str",
+                "to": " ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6e693b82f5a3b13",
+        "type": "function",
+        "z": "8a4b8e583563a5c9",
+        "name": "function 5",
+        "func": "let lines = msg.payload.trim().split(\",\");\nlet data = [];\n\nfor (let i = 0; i < lines.length - 1; i += 2) {\n    let fecha = lines[i].split(\"=\")[1];\n    let medicion = parseInt(lines[i + 1].split(\"=\")[1]);\n    data.push({ fecha, medicion });\n}\n\n// Devuelve cada objeto individualmente\nreturn [data.map(item => ({ payload: item }))];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f1c59dd9d152486",
+        "type": "debug",
+        "z": "8a4b8e583563a5c9",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4973c5b364b083d2",
+        "type": "debug",
+        "z": "8a4b8e583563a5c9",
+        "name": "Monitor",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "9c1444f6c331e0a4",
+        "type": "switch",
+        "z": "8a4b8e583563a5c9",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "{",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 630,
+        "y": 340,
+        "wires": [
+            [
+                "9f26bb2265cfe658"
+            ]
+        ]
+    },
+    {
+        "id": "2c4c948a9595de4d",
+        "type": "comment",
+        "z": "8a4b8e583563a5c9",
+        "name": "Creacion de Dividir JSON",
+        "info": "Mejora:\nCon la finalidad de poder recibir \nen el envio 2 lineas de los JSON y así\nreducir el tiempo de recepción de datos\nen el envío.\n\nPara el caso de la recepcion por MQTT\nse usa la expresion en Dividir usando \"\\n\" \n\nPara el caso de la recepcion por Inyectar\nse usa la expresion en Dividir usando \" \" ",
+        "x": 590,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "fa9f15a8de5b59ed",
+        "type": "function",
+        "z": "8a4b8e583563a5c9",
+        "name": "Acumular en buffer",
+        "func": "let buffer = flow.get(\"buffer\") || [];\nbuffer.push(msg.payload);\nflow.set(\"buffer\", buffer);\nreturn null;",
+        "outputs": 0,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "cc71051cb6a50f1f",
+        "type": "inject",
+        "z": "8a4b8e583563a5c9",
+        "name": "Cada 5s",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "",
+        "x": 470,
+        "y": 560,
+        "wires": [
+            [
+                "28fe266abd04eada"
+            ]
+        ]
+    },
+    {
+        "id": "28fe266abd04eada",
+        "type": "function",
+        "z": "8a4b8e583563a5c9",
+        "name": "Generar SQL múltiple",
+        "func": "let buffer = flow.get(\"buffer\") || [];\nif (buffer.length === 0) return null;\n\nlet sql = \"INSERT INTO DB_MacProp (`FECHA_HORA`, `MEDICION`, `UNIDAD`, `LOCALIZACION`) VALUES \";\nlet filas = buffer.map(d => `('${d.FechaHora}', ${d.Medicion}, ${d.UndMedida}, ${d.Localizacion})`);\nsql += filas.join(\", \") + \";\";\n\nflow.set(\"buffer\", []);  // limpiar\nreturn { topic: sql };",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 560,
+        "wires": [
+            [
+                "626dba5931e4d3ee"
+            ]
+        ]
+    }
+]
